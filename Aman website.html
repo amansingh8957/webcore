@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+*{
+margin:0;
+padding:0;
+overflow: hidden;
+}
+.ul{
+  list-style-type: none;
+  background-color:#090;
+}
+
+.menu{
+  float: left;
+}
+
+.menu a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+  font-size:8px;
+  font-weight:700;
+}
+
+.menu a:hover {
+  background-color:#000;
+}
+.form{
+background-color:#479;
+height:30px;
+padding:5px;
+}
+.search{
+transform: translate(140px,0px);
+padding:3px;
+margin:3px;
+border:1px solid blue;
+border-radius:20px;
+}
+
+.button1{
+transform: translate(90px,0px);
+padding:3px;
+margin:3px;
+border:1px solid blue;
+border-radius:20px;
+background-color: orange;
+}
+.ul1{
+list-style-type: none;
+display:none;
+position: absolute;
+background-color:rgba(0,0,0,0.6);
+width:100px;
+}
+.menu1 a{
+float:left;
+}
+.menu1{
+border-left:2px solid transparent;
+}
+.menu2{
+border-left:2px solid transparent;
+}
+ .menu:hover .ul1{
+display:block;
+}
+.menu1:hover {
+background-color:rgba(0,0,0,0.9);
+border-left:2px solid red;
+}
+.ul2{
+list-style-type: none;
+display:none;
+position: absolute;
+background-color:rgba(0,0,0,0.7);
+width:80px;
+}
+ .menu1:hover .ul2{
+display:block;
+position: fixed;
+transform: translate(98px,0);
+border-visiblity: hidden;
+
+}
+.menu2:hover {
+background-color:rgba(0,0,0,0.9);
+border-left:2px solid red;
+}
+</style>
+</head>
+<body>
+<header>
+<div>
+<form class="form">
+<input type="text" class="search">
+<button type="submit" class="button1">Search</button>
+</form>
+</div>
+<ul class="ul">
+  <li class="menu"><a href="#">HOME</a></li>
+  <li class="menu"><a href="#">ABOUT</a></li>
+  <li class="menu"><a href="#">COURCE</a>
+  <ul class="ul1">
+  <li class="menu1"><a href="#" >C-language</a></li>
+  <li class="menu1"><a href="#" >Web Development</a>
+  <ul class="ul2">
+  <li class="menu2"><a href="#" >HTML</a></li>
+  <li class="menu2"><a href="#" >CSS</a></li>
+  <li class="menu2"><a href="#" >JS</a></li>
+  </ul>
+  </li>
+  </ul>
+  <li class="menu"><a href="#">NEWS</a>
+  <ul class="ul1">
+  <li class="menu1"><a href="#" >Recent</a></li>
+  <li class="menu1"><a href="#" >Old</a></li>
+  </ul>
+  </li>
+  <li class="menu"><a href="#">CONTACT</a>
+  <ul class="ul1">
+  <li class="menu1"><a href="#" >Facebook</a></li>
+  <li class="menu1"><a href="#" >Instagram</a></li>
+  <li class="menu1"><a href="#" >Blog</a></li>
+  <li class="menu1"><a href="#" >Page</a></li>
+  </ul>
+  </li>
+  <li class="menu"><a href="#">POLICY</a>
+  </li>
+</ul>
+<header>
+</body>
+</html>
